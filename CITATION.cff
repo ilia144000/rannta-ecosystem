@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+type: software
+title: "RANNTA Ecosystem Hub (ranntaverse.app)"
+message: "If you use this repository, its source code, or its structured data schemas, please cite it as below."
+authors:
+  - family-names: Ghafari
+    given-names: Ilia
+    orcid: https://orcid.org/0009-0001-9044-4662
+repository-code: https://github.com/ilia144000/rannta-ecosystem
+url: https://ranntaverse.app/
+license: "MIT"
+version: "1.0.0"
+date-released: "2025-12-19"
+abstract: >
+  Source code for the RANNTA ecosystem hub (ranntaverse.app), linking canonical
+  identity (ORCID), official RANNTA references (rannta.com, Medium), and key TON
+  endpoints such as the STON.fi swap link for the RANNTA Jetton.
+keywords:
+  - RANNTA
+  - ranntaverse.app
+  - TON
+  - The Open Network
+  - Jetton
+  - NFT
+  - Ecosystem Hub
+  - JSON-LD
+  - Schema.org
+  - Knowledge Graph
+  - ORCID
+  - STON.fi
+preferred-citation:
+  type: software
+  title: "RANNTA Ecosystem Hub (ranntaverse.app)"
+  authors:
+    - family-names: Ghafari
+      given-names: Ilia
+      orcid: https://orcid.org/0009-0001-9044-4662
+  url: https://ranntaverse.app/
+  version: "1.0.0"
+  date-released: "2025-12-19"
+  license: "MIT"

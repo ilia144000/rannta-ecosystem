@@ -1,0 +1,5 @@
+# Enforce LF in repo for source files
+* text=auto eol=lf
+
+# Keep Windows scripts with CRLF if you ever add them
+*.ps1 text eol=crlf
