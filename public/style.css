@@ -222,4 +222,36 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
 .socialLink:hover svg{
   fill: #e9edf7;
 }
+/* ===== Brand link (Home anchor) ===== */
+.brandLink {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brandLink:hover {
+  opacity: 0.95;
+}
+
+/* ===== Minimal breadcrumb ===== */
+.breadcrumb {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+}
+
+.breadcrumb a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #d4af37; /* gold */
+}
+
+.breadcrumb .sep {
+  margin: 0 6px;
+  opacity: 0.4;
+}
 
