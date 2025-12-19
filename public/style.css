@@ -191,3 +191,7 @@ h1{margin:14px 0 10px;font-size:40px;line-height:1.12;letter-spacing:-.02em}
 }
 
 hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
+
+
+.brandLogo{display:block;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+
