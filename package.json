@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "build:vercel": "next build",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "echo static",
+    "build": "echo static",
+    "start": "echo static",
     "postbuild": "node scripts/copy-out-to-public.mjs"
   },
   "dependencies": {

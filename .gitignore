@@ -12,3 +12,6 @@ pnpm-debug.log*
 
 public/_next/
 
+
+package.json.bak
+
