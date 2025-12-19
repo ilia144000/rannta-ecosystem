@@ -73,7 +73,7 @@ export default function VerifyPage() {
         </p>
       </section>
 
-            <section>
+                  <section>
         <h2>Zenodo (DOI)</h2>
         <ul>
           <li>
@@ -162,3 +162,4 @@ export default function VerifyPage() {
     </>
   );
 }
+
