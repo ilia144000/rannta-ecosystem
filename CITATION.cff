@@ -9,8 +9,9 @@ authors:
 repository-code: https://github.com/ilia144000/rannta-ecosystem
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.17988923
+  - type: doi
     value: 10.5281/zenodo.17988348
-
 url: https://ranntaverse.app/
 license: "MIT"
 version: "1.0.0"

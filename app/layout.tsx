@@ -24,11 +24,13 @@ export default function RootLayout({
             "identifier": {
               "@type": "PropertyValue",
               "propertyID": "DOI",
-              "value": "10.5281/zenodo.17988348",
-              "url": "https://doi.org/10.5281/zenodo.17988348"
+              "value": "10.5281/zenodo.17988923",
+              "url": "https://doi.org/10.5281/zenodo.17988923",
+    "https://doi.org/10.5281/zenodo.17988348"
             },
             "sameAs": [
-              "https://doi.org/10.5281/zenodo.17988348",
+              "https://doi.org/10.5281/zenodo.17988923",
+    "https://doi.org/10.5281/zenodo.17988348",
               "https://rannta.com",
               "https://ranntaverse.app",
               "https://ranntaverse.art",
@@ -41,4 +43,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 

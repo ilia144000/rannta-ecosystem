@@ -1,7 +1,14 @@
 # RANNTAverse App
 
 
-## Canonical Scholarly Record (DOI)
+
+## Canonical Scholarly Record (Zenodo)
+
+Latest Marketplace Release (DOI):
+https://doi.org/10.5281/zenodo.17988923
+
+Previous Archive (DOI):
+https://doi.org/10.5281/zenodo.17988348
 
 This ecosystem hub is canonically archived on Zenodo:
 
