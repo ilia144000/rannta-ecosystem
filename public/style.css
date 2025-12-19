@@ -1,1 +1,193 @@
-<PASTE THE ENTIRE style.css CONTENT HERE>
+:root{
+  --bg:#070a10;
+  --panel:#0b1020;
+  --text:#e9edf7;
+  --muted:#a7b0c2;
+  --faint:#6c7690;
+  --border:rgba(255,255,255,.10);
+  --accent:#d7b56d;
+  --accent2:#7c8cff;
+  --shadow:0 18px 50px rgba(0,0,0,.55);
+  --radius:18px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(900px 500px at 18% 12%, rgba(215,181,109,.14), transparent 55%),
+    radial-gradient(800px 500px at 70% 20%, rgba(124,140,255,.12), transparent 60%),
+    radial-gradient(900px 600px at 50% 90%, rgba(255,255,255,.06), transparent 65%),
+    var(--bg);
+  color:var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.55;
+}
+
+a{color:inherit; text-decoration:none}
+a:hover{opacity:.92}
+
+.container{max-width:1160px;margin:0 auto;padding:0 18px}
+
+.topbar{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter: blur(14px);
+  background: rgba(7,10,16,.62);
+  border-bottom:1px solid var(--border);
+}
+.topbar .row{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+
+.brand{display:flex;align-items:center;gap:12px;min-width:220px}
+.brandMark{
+  width:34px;height:34px;border-radius:12px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,.22), transparent 55%),
+    linear-gradient(135deg, rgba(215,181,109,.9), rgba(124,140,255,.65));
+  box-shadow:0 12px 30px rgba(0,0,0,.45);
+}
+.brandTitle{display:flex;flex-direction:column;line-height:1.1}
+.brandTitle strong{font-size:14px;letter-spacing:.2px}
+.brandTitle span{font-size:12px;color:var(--muted)}
+
+.nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{font-size:13px;color:var(--muted);padding:8px 10px;border-radius:12px}
+.nav a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+
+.hero{padding:58px 0 26px}
+.kicker{
+  display:inline-flex;gap:10px;align-items:center;
+  padding:8px 12px;border:1px solid var(--border);
+  border-radius:999px;color:var(--muted);background:rgba(255,255,255,.04)
+}
+.dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 6px rgba(215,181,109,.12)
+}
+
+h1{margin:14px 0 10px;font-size:40px;line-height:1.12;letter-spacing:-.02em}
+.lead{margin:0;color:var(--muted);max-width:78ch}
+
+.actions{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:11px 14px;border-radius:14px;border:1px solid var(--border);
+  background:rgba(255,255,255,.04);color:var(--text);font-size:14px
+}
+.btn:hover{background:rgba(255,255,255,.06)}
+.btnPrimary{
+  border-color:rgba(215,181,109,.35);
+  background:linear-gradient(135deg, rgba(215,181,109,.18), rgba(124,140,255,.10))
+}
+.btnPrimary:hover{
+  background:linear-gradient(135deg, rgba(215,181,109,.22), rgba(124,140,255,.12))
+}
+
+.grid2{display:grid;gap:14px;grid-template-columns:1.2fr .8fr}
+@media (max-width:960px){.grid2{grid-template-columns:1fr}}
+
+.panel{
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.03);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.panelHeader{padding:16px 16px 0}
+.panelHeader h2{margin:0 0 6px;font-size:16px;letter-spacing:-.01em}
+.panelHeader p{margin:0;color:var(--muted);font-size:13px}
+
+.toolbar{
+  padding:14px 16px 16px;
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  border-bottom:1px solid var(--border);
+}
+.search{
+  flex:1;min-width:240px;display:flex;align-items:center;gap:10px;
+  padding:10px 12px;border-radius:14px;border:1px solid var(--border);
+  background:rgba(0,0,0,.20);
+}
+.search input{width:100%;border:0;outline:0;color:var(--text);background:transparent;font-size:14px}
+.search small{color:var(--faint)}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.03);
+  color:var(--muted);
+  border-radius:999px;
+  padding:8px 10px;
+  font-size:12px;
+  cursor:pointer;
+  user-select:none;
+}
+.chip[data-active="true"]{
+  color:var(--text);
+  border-color:rgba(215,181,109,.35);
+  background:rgba(215,181,109,.10);
+}
+
+.cards{padding:16px;display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:960px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.cards{grid-template-columns:1fr}}
+
+.card{
+  border:1px solid var(--border);
+  background:rgba(0,0,0,.18);
+  border-radius:16px;
+  padding:14px;
+  transition:transform .12s ease,border-color .12s ease,background .12s ease;
+  min-height:118px;
+}
+.card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(215,181,109,.30);
+  background:rgba(255,255,255,.04);
+}
+.cardTop{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.badge{
+  font-size:11px;color:var(--muted);
+  padding:6px 10px;border-radius:999px;border:1px solid var(--border);
+  background:rgba(255,255,255,.03);white-space:nowrap;
+}
+.card h3{margin:8px 0 6px;font-size:15px;letter-spacing:-.01em}
+.card p{margin:0;color:var(--muted);font-size:13px}
+
+.side{padding:16px}
+.sideBlock{
+  border:1px solid var(--border);
+  background:rgba(0,0,0,.18);
+  border-radius:16px;
+  padding:14px;
+}
+.sideBlock + .sideBlock{margin-top:12px}
+.sideBlock h3{margin:0 0 6px;font-size:14px}
+.sideBlock p{margin:0;color:var(--muted);font-size:13px}
+.sideLinks{margin-top:10px;display:flex;gap:10px;flex-wrap:wrap}
+.sideLinks a{font-size:13px;color:var(--accent)}
+.sideLinks a:hover{text-decoration:underline}
+
+.section{padding:26px 0 0}
+.sectionTitle{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:0 2px;margin:0 0 12px}
+.sectionTitle h2{margin:0;font-size:18px}
+.sectionTitle span{color:var(--faint);font-size:12px}
+
+.footer{
+  margin-top:38px;padding:22px 0 40px;
+  color:var(--faint);font-size:12px;border-top:1px solid var(--border);
+}
+
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.kv{grid-template-columns:1fr}}
+.kvItem{
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:12px;
+  background:rgba(255,255,255,.03);
+}
+.kvItem strong{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
+.kvItem code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:12px;color:var(--text);word-break:break-all
+}
+
+hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
