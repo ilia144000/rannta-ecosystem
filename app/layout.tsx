@@ -12,7 +12,33 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": "RANNTAverse — TON-Native NFT Marketplace",
+            "url": "https://ranntaverse.app/",
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "DOI",
+              "value": "10.5281/zenodo.17988348",
+              "url": "https://doi.org/10.5281/zenodo.17988348"
+            },
+            "sameAs": [
+              "https://doi.org/10.5281/zenodo.17988348",
+              "https://rannta.com",
+              "https://ranntaverse.app",
+              "https://ranntaverse.art",
+              "https://github.com/ilia144000"
+            ]
+          })
+        }}
+      /></head>
+<body>{children}</body>
     </html>
   );
 }
+
