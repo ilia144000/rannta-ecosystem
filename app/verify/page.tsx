@@ -73,17 +73,27 @@ export default function VerifyPage() {
         </p>
       </section>
 
-      <section>
+            <section>
         <h2>Zenodo (DOI)</h2>
         <ul>
           <li>
-            <a href={DOI_LATEST_URL} target="_blank" rel="noreferrer">
-              Latest Marketplace Release (DOI)
+            <a href="https://doi.org/10.5281/zenodo.17989368" target="_blank" rel="noreferrer">
+              RANNTA Protocol (Parent) — Canonical On-Chain Protocol Entity (DOI)
             </a>
           </li>
           <li>
-            <a href={DOI_PREV_URL} target="_blank" rel="noreferrer">
-              Previous Archive (DOI)
+            <a href="https://doi.org/10.5281/zenodo.17988923" target="_blank" rel="noreferrer">
+              RANNTAverse Marketplace — Latest Release (DOI)
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.5281/zenodo.17989262" target="_blank" rel="noreferrer">
+              ArcWallet — Child Record (DOI)
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.5281/zenodo.17988348" target="_blank" rel="noreferrer">
+              RANNTAverse Marketplace — Previous Archive (DOI)
             </a>
           </li>
         </ul>

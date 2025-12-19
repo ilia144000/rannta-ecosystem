@@ -13,6 +13,8 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.17988923
   - type: doi
+    value: 10.5281/zenodo.17989262
+  - type: doi
     value: 10.5281/zenodo.17988348
 url: https://ranntaverse.app/
 license: "MIT"
@@ -46,4 +48,5 @@ preferred-citation:
   version: "1.0.0"
   date-released: "2025-12-19"
   license: "MIT"
+
 
