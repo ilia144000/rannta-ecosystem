@@ -285,3 +285,60 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
   opacity: 0.4;
 }
 
+
+/* ===== Gold status badge ===== */
+.badge-gold{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  color:#1a1405;
+  background: linear-gradient(135deg, #f5d37a, #c9a24d);
+  box-shadow: 0 0 14px rgba(245,211,122,.22);
+  border: 1px solid rgba(255,215,120,.25);
+}
+
+/* ===== News panel ===== */
+.hubNews{
+  border:1px solid rgba(255,215,120,.15);
+  background: radial-gradient(900px 280px at 25% 0%, rgba(245,211,122,.10), rgba(0,0,0,.18));
+  border-radius:16px;
+  padding:16px;
+}
+.hubNews h3{
+  margin:0 0 10px;
+  font-size:14px;
+  letter-spacing:.2px;
+  color:#f5d37a;
+}
+.newsList{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+.newsItem{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding:10px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.18);
+}
+.newsDot{
+  width:8px;height:8px;border-radius:50%;
+  margin-top:6px;
+  background:#f5d37a;
+  box-shadow:0 0 10px rgba(245,211,122,.55);
+  flex:0 0 auto;
+}
+.newsItem strong{font-size:13px;color:#e9edf7}
+.newsItem .meta{font-size:12px;color:rgba(255,255,255,.65)}
+.newsItem .meta a{color:#d7b56d;text-decoration:none}
+.newsItem .meta a:hover{text-decoration:underline}
+

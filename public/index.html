@@ -119,6 +119,27 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Announcement",
+      "name":"RANNTA Exchange — Coming Soon",
+      "datePosted":"2025-12-19",
+      "url":"https://ranntaverse.app/exchange/",
+      "text":"RANNTA Exchange is in preparation. Status is published on the Ecosystem Hub."
+    },
+    {
+      "@type":"Announcement",
+      "name":"RANNTA Arc Wallet (TON) — Coming Soon",
+      "datePosted":"2025-12-19",
+      "url":"https://ranntaverse.app/",
+      "text":"RANNTA Arc Wallet for TON is in preparation. Updates will be published via the Ecosystem Hub."
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -316,31 +337,25 @@
 
       <!-- Right side: identity summary -->
       <aside class="panel side" aria-label="Canonical summary">
-        <div class="sideBlock">
-          <h3>Canonical anchor</h3>
-          <p>Use these identifiers as stable references for indexing, wallets, and discovery engines.</p>
-          <div class="sideLinks">
-            <a target="_blank" rel="noreferrer" href="https://doi.org/10.5281/zenodo.17989368">Protocol DOI</a>
-            <a target="_blank" rel="noreferrer" href="https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">Master</a>
-            <a href="/contact/">Contact</a><a href="/verify">Verify</a>
-          </div>
-          <hr class="sep" />
-          <div class="kv">
-            <div class="kvItem">
-              <strong>Protocol DOI</strong>
-              <code>10.5281/zenodo.17989368</code>
-            </div>
-            <div class="kvItem">
-              <strong>Jetton Master</strong>
-              <code>EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR</code>
-            </div>
-          </div>
-        </div>
-
-        <div class="sideBlock">
-          <h3>Operating principle</h3>
-          <p>Not a speculative instrument; a long-lived protocol shaped by creators, symbolism, and on-chain identity.</p>
-        </div>
+        <div class="sideBlock hubNews">
+  <h3>Latest announcements</h3>
+  <ul class="newsList">
+    <li class="newsItem">
+      <span class="newsDot" aria-hidden="true"></span>
+      <div>
+        <strong>RANNTA Exchange</strong>
+        <div class="meta"><span class="badge-gold" data-status-key="exchange">Coming Soon</span> · <a href="/exchange/">Status</a> · <a href="https://ranntaexchange.com/" target="_blank" rel="noreferrer">Site</a></div>
+      </div>
+    </li>
+    <li class="newsItem">
+      <span class="newsDot" aria-hidden="true"></span>
+      <div>
+        <strong>RANNTA Arc Wallet (TON)</strong>
+        <div class="meta"><span class="badge-gold" data-status-key="arcwallet_ton">Coming Soon</span></div>
+      </div>
+    </li>
+  </ul>
+</div>
       </aside>
     </section>
 
@@ -520,8 +535,26 @@
       q.addEventListener("input", apply);
     })();
   </script>
+<script>
+(async function(){
+  try{
+    const r = await fetch("/status.json", { cache: "no-store" });
+    if(!r.ok) return;
+    const j = await r.json();
+    const items = (j && j.items) ? j.items : {};
+    document.querySelectorAll("[data-status-key]").forEach(el=>{
+      const k = el.getAttribute("data-status-key");
+      const it = items[k];
+      if(!it) return;
+      const label = (it.eta && it.eta.trim().length) ? it.eta : (it.label || "");
+      if(label) el.textContent = label;
+    });
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
+
 
 
 

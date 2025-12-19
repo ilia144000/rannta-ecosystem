@@ -1,0 +1,17 @@
+{
+  "updatedUtc": "2025-12-19T00:00:00Z",
+  "items": {
+    "exchange": {
+      "title": "RANNTA Exchange",
+      "status": "coming_soon",
+      "label": "Coming Soon",
+      "eta": ""
+    },
+    "arcwallet_ton": {
+      "title": "RANNTA Arc Wallet (TON)",
+      "status": "coming_soon",
+      "label": "Coming Soon",
+      "eta": ""
+    }
+  }
+}

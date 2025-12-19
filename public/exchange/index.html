@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exchange Status — RANNTA Ecosystem Hub</title>
+  <meta name="description" content="RANNTA Exchange status page (static)."/>
+  <link rel="canonical" href="https://ranntaverse.app/exchange/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/style.css?v=3" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Exchange Status — RANNTA Ecosystem Hub",
+    "url":"https://ranntaverse.app/exchange/",
+    "about":{"@type":"Thing","name":"RANNTA Exchange"}
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="row">
+        <a class="brandLink" href="/">
+          <div class="brand">
+            <img class="brandLogo" src="/rannta-hub-logo.svg" alt="RANNTA Hub" width="34" height="34" />
+            <div class="brandTitle">
+              <strong>RANNTA Ecosystem Hub</strong>
+              <span>Static knowledge + canonical references</span>
+            </div>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <a href="/#start">Start</a>
+          <a href="/#quick">Quick</a>
+          <a href="/#ecosystem">Ecosystem</a>
+          <a href="/#references">References</a>
+          <a href="/verify/">Verify</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb"><a href="/">Home</a><span class="sep">/</span><span>Exchange</span></nav>
+
+    <section class="hero" style="padding-bottom:10px">
+      <div class="kicker"><span class="dot" aria-hidden="true"></span><span>Status</span></div>
+      <h1>RANNTA Exchange</h1>
+      <p class="lead">This is a static status page. The label below is populated from <code>/status.json</code>.</p>
+      <div class="actions" style="margin-top:16px">
+        <a class="btn btnPrimary" href="https://ranntaexchange.com/" target="_blank" rel="noreferrer">Open ranntaexchange.com</a>
+        <a class="btn" href="/#references">Back to references</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sectionTitle">
+        <h2>Status</h2>
+        <span>Canonical</span>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="cardTop"><div class="badge">Exchange</div><div class="badge">Update</div></div>
+          <h3>Release window</h3>
+          <p><span class="badge-gold" data-status-key="exchange">Coming Soon</span></p>
+          <p style="margin-top:10px;color:rgba(255,255,255,.65);font-size:13px">
+            When an ETA is available, it will appear here without changing this HTML.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+    (async function(){
+      try{
+        const r = await fetch("/status.json", { cache: "no-store" });
+        if(!r.ok) return;
+        const j = await r.json();
+        const items = (j && j.items) ? j.items : {};
+        document.querySelectorAll("[data-status-key]").forEach(el=>{
+          const k = el.getAttribute("data-status-key");
+          const it = items[k];
+          if(!it) return;
+          const label = (it.eta && it.eta.trim().length) ? it.eta : (it.label || "");
+          if(label) el.textContent = label;
+        });
+      }catch(e){}
+    })();
+    </script>
+
+    <footer class="footer">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+          <div>© RANNTAverse — Built on The Open Network</div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap">
+            <a href="/">Top</a>
+            <a href="/verify/">Verify</a>
+            <a href="/contact/">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
