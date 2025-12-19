@@ -95,7 +95,8 @@ export default function HomePage() {
           Use the links below as the official reference points for discovery, indexing, and verification.
         </p>
         <ul>
-                                        <li><a href="/verify">Verification Page (Canonical)</a></li>
+                                                  <li><a href="https://doi.org/10.5281/zenodo.17989368" target="_blank" rel="noreferrer">RANNTA Protocol (Parent) — Zenodo DOI</a></li>
+<li><a href="/verify">Verification Page (Canonical)</a></li>
 <li><a href="https://doi.org/10.5281/zenodo.17988348" target="_blank" rel="noreferrer">Previous Zenodo DOI (Archive)</a></li>
 <li><a href="https://doi.org/10.5281/zenodo.17988923" target="_blank" rel="noreferrer">Canonical Scholarly Record (Zenodo DOI — Latest Marketplace Release)</a></li>
 <li><a href="https://rannta.com/" target="_blank" rel="noreferrer">Official Website (rannta.com)</a></li>
@@ -121,5 +122,6 @@ export default function HomePage() {
     </>
   );
 }
+
 
 

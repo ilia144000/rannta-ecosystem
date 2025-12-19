@@ -2,6 +2,17 @@
 
 
 
+
+<!-- RANNTA_DOI_MAP -->
+## Canonical DOI Map (Zenodo)
+
+Parent (RANNTA Protocol):
+- https://doi.org/10.5281/zenodo.17989368
+
+Child Records:
+- RANNTAverse Marketplace (Latest): https://doi.org/10.5281/zenodo.17988923
+- RANNTAverse Marketplace (Previous Archive): https://doi.org/10.5281/zenodo.17988348
+
 ## Canonical Scholarly Record (Zenodo)
 
 Latest Marketplace Release (DOI):
@@ -26,3 +37,4 @@ Official ecosystem hub for the RANNTA protocol on The Open Network.
 - Next.js (App Router)
 - Static export
 - TON-native ecosystem
+
