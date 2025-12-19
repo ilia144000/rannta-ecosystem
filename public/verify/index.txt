@@ -1,0 +1,67 @@
+1:"$Sreact.fragment"
+3:I[70616,["/_next/static/chunks/834b2b5a7f2a2555.js"],"default"]
+4:I[89451,["/_next/static/chunks/834b2b5a7f2a2555.js"],"default"]
+d:I[73284,["/_next/static/chunks/834b2b5a7f2a2555.js"],"default"]
+2:T4ca,{"@context":"https://schema.org","@graph":[{"@type":"CreativeWork","name":"RANNTA Protocol (Parent)","url":"https://rannta.com/","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.17989368","url":"https://doi.org/10.5281/zenodo.17989368"},"sameAs":["https://doi.org/10.5281/zenodo.17989368","https://rannta.com/","https://medium.com/@ranntaofficial","https://github.com/ilia144000"],"hasPart":["https://doi.org/10.5281/zenodo.17988923","https://doi.org/10.5281/zenodo.17989262","https://ranntaverse.app/","https://doi.org/10.5281/zenodo.17988348"]},{"@type":"WebSite","name":"RANNTA Ecosystem Hub (ranntaverse.app)","url":"https://ranntaverse.app/","isPartOf":{"@type":"CreativeWork","name":"RANNTA Protocol (Parent)","sameAs":["https://doi.org/10.5281/zenodo.17989368"]},"sameAs":["https://doi.org/10.5281/zenodo.17989368","https://doi.org/10.5281/zenodo.17988923","https://doi.org/10.5281/zenodo.17989262","https://doi.org/10.5281/zenodo.17988348","https://github.com/ilia144000/rannta-ecosystem","https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR","https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR"]}]}0:{"P":null,"b":"M0gHzz4VL0yfMqI7qLQ-f","c":["","verify",""],"q":"","i":false,"f":[[["",{"children":["verify",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[null,["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[[["$","section",null,{"children":[["$","h1",null,{"children":"Verify"}],["$","p",null,{"children":"Canonical references for verification, indexing, and citation of the RANNTA ecosystem."}]]}],["$","section",null,{"children":[["$","h2",null,{"children":"Zenodo (DOI)"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"https://doi.org/10.5281/zenodo.17989368","target":"_blank","rel":"noreferrer","children":"RANNTA Protocol (Parent) — Canonical On-Chain Protocol Entity (DOI)"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://doi.org/10.5281/zenodo.17988923","target":"_blank","rel":"noreferrer","children":"RANNTAverse Marketplace — Latest Release (DOI)"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://doi.org/10.5281/zenodo.17989262","target":"_blank","rel":"noreferrer","children":"ArcWallet — Child Record (DOI)"}]}],["$","li",null,{"children":"$L5"}]]}]]}],"$L6","$L7","$L8","$L9","$La"],null,"$Lb"]}],{},null,false,false]},null,false,false]},null,false,false],"$Lc",false]],"m":"$undefined","G":["$d",[]],"S":true}
+10:I[97884,["/_next/static/chunks/834b2b5a7f2a2555.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+13:I[97884,["/_next/static/chunks/834b2b5a7f2a2555.js"],"ViewportBoundary"]
+15:I[97884,["/_next/static/chunks/834b2b5a7f2a2555.js"],"MetadataBoundary"]
+5:["$","a",null,{"href":"https://doi.org/10.5281/zenodo.17988348","target":"_blank","rel":"noreferrer","children":"RANNTAverse Marketplace — Previous Archive (DOI)"}]
+6:["$","section",null,{"children":[["$","h2",null,{"children":"Official References"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"https://rannta.com/","target":"_blank","rel":"noreferrer","children":"Official Website (rannta.com)"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://medium.com/@ranntaofficial","target":"_blank","rel":"noreferrer","children":"Official Publications (Medium)"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/ilia144000/rannta-ecosystem","target":"_blank","rel":"noreferrer","children":"Source Repository (rannta-ecosystem)"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/ilia144000","target":"_blank","rel":"noreferrer","children":"Builder Profile (GitHub)"}]}]]}]]}]
+7:["$","section",null,{"children":[["$","h2",null,{"children":"TON References"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR","target":"_blank","rel":"noreferrer","children":"STON.fi Swap (TON → RANNTA)"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR","target":"_blank","rel":"noreferrer","children":"Tonviewer (Jetton Master)"}]}]]}]]}]
+e:T5d6,{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Verify — RANNTA Ecosystem Hub",
+  "url": "https://ranntaverse.app/verify/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "RANNTA Ecosystem Hub",
+    "url": "https://ranntaverse.app/"
+  },
+  "about": [
+    {
+      "@type": "CreativeWork",
+      "name": "RANNTAverse Marketplace — Latest Release (Zenodo)",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.17988923",
+        "url": "https://doi.org/10.5281/zenodo.17988923"
+      },
+      "sameAs": [
+        "https://doi.org/10.5281/zenodo.17988923"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "RANNTAverse Marketplace — Previous Archive (Zenodo)",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.17988348",
+        "url": "https://doi.org/10.5281/zenodo.17988348"
+      },
+      "sameAs": [
+        "https://doi.org/10.5281/zenodo.17988348"
+      ]
+    }
+  ],
+  "sameAs": [
+    "https://rannta.com/",
+    "https://medium.com/@ranntaofficial",
+    "https://github.com/ilia144000/rannta-ecosystem",
+    "https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR",
+    "https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR",
+    "https://doi.org/10.5281/zenodo.17988923",
+    "https://doi.org/10.5281/zenodo.17988348"
+  ]
+}8:["$","section",null,{"children":[["$","h2",null,{"children":"Machine-Readable"}],["$","p",null,{"children":"This page includes a JSON-LD knowledge block for deterministic indexing."}],["$","div",null,{"className":"card","children":["$","code",null,{"style":{"whiteSpace":"pre-wrap"},"children":"$e"}]}]]}]
+9:["$","section",null,{"children":["$","p",null,{"children":"© RANNTA Ecosystem — Built on The Open Network"}]}]
+f:T4a9,{"@context":"https://schema.org","@type":"WebPage","name":"Verify — RANNTA Ecosystem Hub","url":"https://ranntaverse.app/verify/","isPartOf":{"@type":"WebSite","name":"RANNTA Ecosystem Hub","url":"https://ranntaverse.app/"},"about":[{"@type":"CreativeWork","name":"RANNTAverse Marketplace — Latest Release (Zenodo)","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.17988923","url":"https://doi.org/10.5281/zenodo.17988923"},"sameAs":["https://doi.org/10.5281/zenodo.17988923"]},{"@type":"CreativeWork","name":"RANNTAverse Marketplace — Previous Archive (Zenodo)","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.17988348","url":"https://doi.org/10.5281/zenodo.17988348"},"sameAs":["https://doi.org/10.5281/zenodo.17988348"]}],"sameAs":["https://rannta.com/","https://medium.com/@ranntaofficial","https://github.com/ilia144000/rannta-ecosystem","https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR","https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR","https://doi.org/10.5281/zenodo.17988923","https://doi.org/10.5281/zenodo.17988348"]}a:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$f"}}]
+b:["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$11",null,{"name":"Next.Metadata","children":"$L16"}]}]}],null]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+12:null
+16:[["$","title","0",{"children":"Verify — RANNTA Ecosystem Hub"}],["$","meta","1",{"name":"description","content":"Canonical references for verification, indexing, and citation of the RANNTA ecosystem on TON."}],["$","meta","2",{"name":"keywords","content":"RANNTA,TON,The Open Network,Jetton,NFT,NFT marketplace,RANNTAverse,ArcWallet,Zenodo,DOI,knowledge graph,Schema.org,protocol-entity,STON.fi"}],["$","link","3",{"rel":"canonical","href":"https://ranntaverse.app/"}],["$","meta","4",{"property":"og:title","content":"RANNTA Ecosystem Hub"}],["$","meta","5",{"property":"og:description","content":"Canonical references for RANNTA on TON: protocol DOI, marketplace DOI releases, ArcWallet DOI, and verification links."}],["$","meta","6",{"property":"og:url","content":"https://ranntaverse.app/"}],["$","meta","7",{"property":"og:site_name","content":"RANNTA Ecosystem Hub"}],["$","meta","8",{"property":"og:image","content":"https://ranntaverse.app/og.svg"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"RANNTA Ecosystem Hub"}],["$","meta","12",{"name":"twitter:description","content":"Canonical references for RANNTA on TON: protocol DOI, marketplace DOI releases, ArcWallet DOI."}],["$","meta","13",{"name":"twitter:image","content":"https://ranntaverse.app/og.svg"}]]
