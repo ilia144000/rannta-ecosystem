@@ -7,8 +7,7 @@
     "build:vercel": "next build",
     "dev": "echo static",
     "build": "echo static",
-    "start": "echo static",
-    "postbuild": "node scripts/copy-out-to-public.mjs"
+    "start": "echo static"
   },
   "dependencies": {
     "next": "^16.1.0",
