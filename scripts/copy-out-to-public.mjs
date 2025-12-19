@@ -16,7 +16,7 @@ const outDir = path.resolve("out");
 const publicDir = path.resolve("public");
 
 if (!fs.existsSync(outDir)) {
-  console.error("out/ not found. Make sure output: 'export' is enabled.");
+  console.error("out/ not found. Ensure next.config.mjs has output: 'export'.");
   process.exit(1);
 }
 
