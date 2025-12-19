@@ -90,6 +90,20 @@ export default function HomePage() {
 
       {/* VISION */}
       <section>
+        <h2>Canonical References</h2>
+        <p>
+          Use the links below as the official reference points for discovery, indexing, and verification.
+        </p>
+        <ul>
+          <li><a href="https://rannta.com/" target="_blank" rel="noreferrer">Official Website (rannta.com)</a></li>
+          <li><a href="https://medium.com/@ranntaofficial" target="_blank" rel="noreferrer">Official Publications (Medium)</a></li>
+          <li><a href="https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR" target="_blank" rel="noreferrer">STON.fi Swap (TON → RANNTA)</a></li>
+          <li><a href="https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR" target="_blank" rel="noreferrer">Tonviewer (Jetton Master)</a></li>
+          <li><a href="https://github.com/ilia144000" target="_blank" rel="noreferrer">GitHub (Builder Profile)</a></li>
+        </ul>
+      </section>
+
+      <section>
         <h2>Beyond a Token</h2>
         <p>
           RANNTA is not designed as a speculative instrument, but as a long-lived
