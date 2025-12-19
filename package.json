@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "build:vercel": "next build && next export",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -19,3 +20,4 @@
     "typescript": "^5.9.3"
   }
 }
+
