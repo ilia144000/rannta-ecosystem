@@ -1,1 +1,469 @@
-<PASTE THE ENTIRE index.html CONTENT HERE>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>RANNTA Ecosystem Hub — Token, NFTs, Marketplace on TON</title>
+  <meta name="description" content="Official ecosystem hub for RANNTA on TON. Canonical DOI graph (Zenodo) for protocol, marketplace releases, and ArcWallet." />
+  <meta name="keywords" content="RANNTA,TON,The Open Network,Jetton,NFT,NFT marketplace,RANNTAverse,ArcWallet,Zenodo,DOI,knowledge graph,Schema.org,protocol-entity,STON.fi" />
+  <link rel="canonical" href="https://ranntaverse.app/" />
+
+  <meta property="og:title" content="RANNTA Ecosystem Hub" />
+  <meta property="og:description" content="Canonical references for RANNTA on TON: protocol DOI, marketplace DOI releases, ArcWallet DOI, and verification links." />
+  <meta property="og:url" content="https://ranntaverse.app/" />
+  <meta property="og:site_name" content="RANNTA Ecosystem Hub" />
+  <meta property="og:image" content="https://ranntaverse.app/og.svg" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RANNTA Ecosystem Hub" />
+  <meta name="twitter:description" content="Canonical references for RANNTA on TON: protocol DOI, marketplace DOI releases, ArcWallet DOI." />
+  <meta name="twitter:image" content="https://ranntaverse.app/og.svg" />
+
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Canonical JSON-LD graph preserved from your current hub -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"CreativeWork",
+        "name":"RANNTA Protocol (Parent)",
+        "url":"https://rannta.com/",
+        "identifier":{
+          "@type":"PropertyValue",
+          "propertyID":"DOI",
+          "value":"10.5281/zenodo.17989368",
+          "url":"https://doi.org/10.5281/zenodo.17989368"
+        },
+        "sameAs":[
+          "https://doi.org/10.5281/zenodo.17989368",
+          "https://rannta.com/",
+          "https://medium.com/@ranntaofficial",
+          "https://github.com/ilia144000"
+        ],
+        "hasPart":[
+          "https://doi.org/10.5281/zenodo.17988923",
+          "https://doi.org/10.5281/zenodo.17989262",
+          "https://ranntaverse.app/",
+          "https://doi.org/10.5281/zenodo.17988348"
+        ]
+      },
+      {
+        "@type":"WebSite",
+        "name":"RANNTA Ecosystem Hub (ranntaverse.app)",
+        "url":"https://ranntaverse.app/",
+        "isPartOf":{
+          "@type":"CreativeWork",
+          "name":"RANNTA Protocol (Parent)",
+          "sameAs":[
+            "https://doi.org/10.5281/zenodo.17989368"
+          ]
+        },
+        "sameAs":[
+          "https://doi.org/10.5281/zenodo.17989368",
+          "https://doi.org/10.5281/zenodo.17988923",
+          "https://doi.org/10.5281/zenodo.17989262",
+          "https://doi.org/10.5281/zenodo.17988348",
+          "https://github.com/ilia144000/rannta-ecosystem",
+          "https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR",
+          "https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Sticky top bar -->
+  <header class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="brand">
+          <div class="brandMark" aria-hidden="true"></div>
+          <div class="brandTitle">
+            <strong>RANNTA Ecosystem Hub</strong>
+            <span>Static knowledge + canonical references</span>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="#start">Start</a>
+          <a href="#quick">Quick</a>
+          <a href="#ecosystem">Ecosystem</a>
+          <a href="#references">References</a>
+          <a href="/verify">Verify</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section id="start" class="hero">
+      <div class="kicker"><span class="dot" aria-hidden="true"></span><span>Protocol-Entity on TON • Canonical indexing</span></div>
+      <h1>RANNTA is a living protocol on The Open Network</h1>
+      <p class="lead">
+        A creator-first ecosystem combining token utility, NFT infrastructure, and symbolic on-chain design — powered by TON.
+      </p>
+
+      <div class="actions">
+        <a class="btn btnPrimary" href="#ecosystem">Explore ecosystem map</a>
+        <a class="btn" href="#token">Token + liquidity</a>
+        <a class="btn" target="_blank" rel="noreferrer" href="https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">Swap on STON.fi</a>
+        <a class="btn" target="_blank" rel="noreferrer" href="https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">Tonviewer master</a>
+      </div>
+    </section>
+
+    <!-- Hub panel: search + filters + cards -->
+    <section id="quick" class="grid2">
+      <div class="panel">
+        <div class="panelHeader">
+          <h2>Hub navigation</h2>
+          <p>Search and filter the ecosystem modules. Everything opens in a single page workflow.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search" role="search">
+            <small>Search</small>
+            <input id="q" type="search" placeholder="Try: token, doi, marketplace, swap, github..." autocomplete="off" />
+          </div>
+
+          <div class="filters" aria-label="Filters">
+            <button class="chip" data-filter="all" data-active="true" type="button">All</button>
+            <button class="chip" data-filter="token" type="button">Token</button>
+            <button class="chip" data-filter="marketplace" type="button">Marketplace</button>
+            <button class="chip" data-filter="docs" type="button">Docs</button>
+            <button class="chip" data-filter="identity" type="button">Identity</button>
+            <button class="chip" data-filter="community" type="button">Community</button>
+          </div>
+        </div>
+
+        <div class="cards" id="cards">
+          <!-- Token -->
+          <a class="card" data-tags="token identity" href="#token">
+            <div class="cardTop">
+              <div class="badge">Token</div>
+              <div class="badge">TON Jetton</div>
+            </div>
+            <h3>RANNTA Token</h3>
+            <p>Utility token for ecosystem interactions, access, and protocol-level actions.</p>
+          </a>
+
+          <a class="card" data-tags="token" target="_blank" rel="noreferrer"
+             href="https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">
+            <div class="cardTop">
+              <div class="badge">Liquidity</div>
+              <div class="badge">STON.fi</div>
+            </div>
+            <h3>Swap TON → RANNTA</h3>
+            <p>Primary swap entry with chart enabled for quick discovery.</p>
+          </a>
+
+          <a class="card" data-tags="token identity" target="_blank" rel="noreferrer"
+             href="https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">
+            <div class="cardTop">
+              <div class="badge">Explorer</div>
+              <div class="badge">Tonviewer</div>
+            </div>
+            <h3>Jetton Master</h3>
+            <p>Canonical on-chain reference for indexers and wallets.</p>
+          </a>
+
+          <!-- Marketplace -->
+          <a class="card" data-tags="marketplace docs" href="https://doi.org/10.5281/zenodo.17988923" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Docs</div>
+              <div class="badge">Zenodo</div>
+            </div>
+            <h3>Marketplace Release (DOI)</h3>
+            <p>Latest canonical scholarly record for marketplace release indexing.</p>
+          </a>
+
+          <a class="card" data-tags="marketplace" href="https://rannta.com/" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Site</div>
+              <div class="badge">rannta.com</div>
+            </div>
+            <h3>Official Website</h3>
+            <p>Primary project site and narrative entry point.</p>
+          </a>
+
+          <a class="card" data-tags="marketplace community" href="https://medium.com/@ranntaofficial" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Publications</div>
+              <div class="badge">Medium</div>
+            </div>
+            <h3>RANNTA Official</h3>
+            <p>Canonical announcements and narrative updates.</p>
+          </a>
+
+          <!-- Identity / Docs -->
+          <a class="card" data-tags="identity docs" href="https://doi.org/10.5281/zenodo.17989368" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Protocol</div>
+              <div class="badge">DOI</div>
+            </div>
+            <h3>RANNTA Protocol (Parent)</h3>
+            <p>Top-level DOI record anchoring the ecosystem graph.</p>
+          </a>
+
+          <a class="card" data-tags="docs identity" href="/verify">
+            <div class="cardTop">
+              <div class="badge">Verify</div>
+              <div class="badge">Canonical</div>
+            </div>
+            <h3>Verification Page</h3>
+            <p>Canonical verification landing for discovery and indexing workflows.</p>
+          </a>
+
+          <a class="card" data-tags="docs" href="https://doi.org/10.5281/zenodo.17989262" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Tooling</div>
+              <div class="badge">DOI</div>
+            </div>
+            <h3>ArcWallet (DOI)</h3>
+            <p>Canonical record for wallet and tooling distribution.</p>
+          </a>
+
+          <!-- Builder -->
+          <a class="card" data-tags="docs" href="https://github.com/ilia144000/rannta-ecosystem" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Repo</div>
+              <div class="badge">GitHub</div>
+            </div>
+            <h3>rannta-ecosystem</h3>
+            <p>Source repository for this static hub and canonical references.</p>
+          </a>
+
+          <a class="card" data-tags="community" href="https://github.com/ilia144000" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Builder</div>
+              <div class="badge">Profile</div>
+            </div>
+            <h3>Builder Profile</h3>
+            <p>Primary builder profile and code provenance.</p>
+          </a>
+
+          <a class="card" data-tags="docs" href="https://doi.org/10.5281/zenodo.17988348" target="_blank" rel="noreferrer">
+            <div class="cardTop">
+              <div class="badge">Archive</div>
+              <div class="badge">DOI</div>
+            </div>
+            <h3>Previous DOI (Archive)</h3>
+            <p>Older archive record preserved for long-term continuity.</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side: identity summary -->
+      <aside class="panel side" aria-label="Canonical summary">
+        <div class="sideBlock">
+          <h3>Canonical anchor</h3>
+          <p>Use these identifiers as stable references for indexing, wallets, and discovery engines.</p>
+          <div class="sideLinks">
+            <a target="_blank" rel="noreferrer" href="https://doi.org/10.5281/zenodo.17989368">Protocol DOI</a>
+            <a target="_blank" rel="noreferrer" href="https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">Master</a>
+            <a href="/verify">Verify</a>
+          </div>
+          <hr class="sep" />
+          <div class="kv">
+            <div class="kvItem">
+              <strong>Protocol DOI</strong>
+              <code>10.5281/zenodo.17989368</code>
+            </div>
+            <div class="kvItem">
+              <strong>Jetton Master</strong>
+              <code>EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="sideBlock">
+          <h3>Operating principle</h3>
+          <p>Not a speculative instrument; a long-lived protocol shaped by creators, symbolism, and on-chain identity.</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Token section -->
+    <section id="token" class="section">
+      <div class="sectionTitle">
+        <h2>Token and liquidity</h2>
+        <span>Fast entry points</span>
+      </div>
+
+      <div class="cards">
+        <a class="card" data-tags="token" target="_blank" rel="noreferrer"
+           href="https://app.ston.fi/swap?chartVisible=true&chartInterval=1w&ft=TON&tt=EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">
+          <div class="cardTop"><div class="badge">Swap</div><div class="badge">STON.fi</div></div>
+          <h3>STON.fi swap</h3>
+          <p>Swap entry with chart enabled for trend visibility.</p>
+        </a>
+
+        <a class="card" data-tags="token" target="_blank" rel="noreferrer"
+           href="https://tonviewer.com/EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR">
+          <div class="cardTop"><div class="badge">Explorer</div><div class="badge">Tonviewer</div></div>
+          <h3>On-chain master</h3>
+          <p>Canonical on-chain endpoint for indexers and wallets.</p>
+        </a>
+
+        <a class="card" data-tags="token docs" href="/verify">
+          <div class="cardTop"><div class="badge">Verify</div><div class="badge">Canonical</div></div>
+          <h3>Verification page</h3>
+          <p>Use this for consistent discovery and verification flows.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Ecosystem map -->
+    <section id="ecosystem" class="section">
+      <div class="sectionTitle">
+        <h2>Ecosystem overview</h2>
+        <span>Single-page map</span>
+      </div>
+
+      <div class="cards">
+        <div class="card" data-tags="marketplace">
+          <div class="cardTop"><div class="badge">Marketplace</div><div class="badge">TON-native</div></div>
+          <h3>RANNTAverse marketplace</h3>
+          <p>Symbolic and creator-driven NFTs with ownership clarity and low fee design.</p>
+        </div>
+
+        <div class="card" data-tags="identity">
+          <div class="cardTop"><div class="badge">Identity</div><div class="badge">Canonical</div></div>
+          <h3>Protocol-Entity</h3>
+          <p>Designed to be indexable, referenceable, and stable across time.</p>
+        </div>
+
+        <div class="card" data-tags="docs">
+          <div class="cardTop"><div class="badge">Docs</div><div class="badge">DOI graph</div></div>
+          <h3>DOI anchoring</h3>
+          <p>Zenodo DOIs act as long-lived provenance and discovery anchors.</p>
+        </div>
+
+        <div class="card" data-tags="community">
+          <div class="cardTop"><div class="badge">Community</div><div class="badge">Public</div></div>
+          <h3>Announcements</h3>
+          <p>Official publication stream used for indexing and narrative continuity.</p>
+        </div>
+
+        <div class="card" data-tags="docs">
+          <div class="cardTop"><div class="badge">Source</div><div class="badge">GitHub</div></div>
+          <h3>Open provenance</h3>
+          <p>Repository and builder profile provide verifiable provenance.</p>
+        </div>
+
+        <div class="card" data-tags="token">
+          <div class="cardTop"><div class="badge">Liquidity</div><div class="badge">Swap</div></div>
+          <h3>Market entry</h3>
+          <p>Primary swap entry is linked above for low-friction access.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Canonical references -->
+    <section id="references" class="section">
+      <div class="sectionTitle">
+        <h2>Canonical references</h2>
+        <span>Indexing + verification</span>
+      </div>
+
+      <div class="cards">
+        <a class="card" data-tags="docs identity" href="https://doi.org/10.5281/zenodo.17989368" target="_blank" rel="noreferrer">
+          <div class="cardTop"><div class="badge">DOI</div><div class="badge">Protocol</div></div>
+          <h3>Protocol DOI (Parent)</h3>
+          <p>Top-level record used as the canonical hub anchor.</p>
+        </a>
+
+        <a class="card" data-tags="docs" href="https://doi.org/10.5281/zenodo.17988923" target="_blank" rel="noreferrer">
+          <div class="cardTop"><div class="badge">DOI</div><div class="badge">Release</div></div>
+          <h3>Marketplace DOI (Latest)</h3>
+          <p>Canonical release record for discovery and indexing.</p>
+        </a>
+
+        <a class="card" data-tags="docs" href="https://doi.org/10.5281/zenodo.17989262" target="_blank" rel="noreferrer">
+          <div class="cardTop"><div class="badge">DOI</div><div class="badge">Tooling</div></div>
+          <h3>ArcWallet DOI</h3>
+          <p>Canonical tooling record for wallet distribution.</p>
+        </a>
+
+        <a class="card" data-tags="docs" href="https://doi.org/10.5281/zenodo.17988348" target="_blank" rel="noreferrer">
+          <div class="cardTop"><div class="badge">DOI</div><div class="badge">Archive</div></div>
+          <h3>Previous DOI (Archive)</h3>
+          <p>Historical archive record for continuity.</p>
+        </a>
+
+        <a class="card" data-tags="docs identity" href="/verify">
+          <div class="cardTop"><div class="badge">Verify</div><div class="badge">Canonical</div></div>
+          <h3>Verification page</h3>
+          <p>Canonical verification landing for link-checking and indexers.</p>
+        </a>
+
+        <a class="card" data-tags="docs" href="https://github.com/ilia144000/rannta-ecosystem" target="_blank" rel="noreferrer">
+          <div class="cardTop"><div class="badge">Repo</div><div class="badge">GitHub</div></div>
+          <h3>Source repository</h3>
+          <p>This hub’s source and reference list for long-term maintenance.</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+          <div>© RANNTAverse — Built on The Open Network</div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap">
+            <a href="#start">Top</a>
+            <a href="/verify">Verify</a>
+            <a href="https://rannta.com/" target="_blank" rel="noreferrer">rannta.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var q = document.getElementById("q");
+      var cards = Array.prototype.slice.call(document.querySelectorAll("#cards .card"));
+      var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+      var active = "all";
+
+      function setActiveChip(value){
+        active = value;
+        chips.forEach(function(c){ c.dataset.active = (c.dataset.filter === value) ? "true" : "false"; });
+        apply();
+      }
+
+      function matchesFilter(card){
+        if(active === "all") return true;
+        var tags = (card.getAttribute("data-tags") || "").toLowerCase();
+        return tags.indexOf(active) !== -1;
+      }
+
+      function matchesQuery(card, query){
+        if(!query) return true;
+        var text = (card.innerText || card.textContent || "").toLowerCase();
+        return text.indexOf(query) !== -1;
+      }
+
+      function apply(){
+        var query = (q.value || "").trim().toLowerCase();
+        cards.forEach(function(card){
+          var ok = matchesFilter(card) && matchesQuery(card, query);
+          card.style.display = ok ? "" : "none";
+        });
+      }
+
+      chips.forEach(function(c){
+        c.addEventListener("click", function(){ setActiveChip(c.dataset.filter); });
+      });
+
+      q.addEventListener("input", apply);
+    })();
+  </script>
+</body>
+</html>
