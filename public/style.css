@@ -408,3 +408,43 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
   }
 }
 
+
+/* ===== REMOVE SOCIAL ICONS FROM HEADER ===== */
+.topbar .social,
+.topbar .social-icons,
+.topbar .header-social {
+  display: none !important;
+}
+
+/* ===== STANDARD HEADER LAYOUT ===== */
+.topbar {
+  width: 100%;
+}
+
+.topbar .row {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand ALWAYS hard-left */
+.topbar .brandLink {
+  margin-right: auto !important;
+}
+
+/* Nav ALWAYS right, no drift */
+.topbar .nav {
+  margin-left: auto !important;
+  display: flex;
+  gap: 18px;
+  white-space: nowrap;
+}
+
+/* NEVER allow header scroll */
+.topbar,
+.topbar * {
+  overflow: visible !important;
+}
