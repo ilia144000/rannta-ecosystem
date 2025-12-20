@@ -448,3 +448,86 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
 .topbar * {
   overflow: visible !important;
 }
+
+/* ===== HEADER STANDARD ALIGNMENT LOCK ===== */
+/* Align topbar to the SAME container width as the body (extracted from CSS) */
+.topbar{
+  width:100% !important;
+  overflow:visible !important;
+}
+
+.topbar .container{
+  width:100% !important;
+  max-width:1160px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  padding-left:16px !important;
+  padding-right:16px !important;
+  box-sizing:border-box !important;
+}
+
+/* Standard header layout: left brand, right nav */
+.topbar .row{
+  width:100% !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:16px !important;
+}
+
+/* Brand hard-left */
+.topbar .brandLink{ margin-right:24px !important; }
+
+/* Nav hard-right, no internal scrolling */
+.topbar .nav{
+  margin-left:auto !important;
+  display:flex !important;
+  gap:18px !important;
+  white-space:nowrap !important;
+  overflow:visible !important;
+}
+
+/* Remove social icons from header (move them to footer) */
+.topbar .social{ display:none !important; }
+
+/* Mobile: wrap nav to next line instead of creating any header scrollbars */
+@media (max-width: 720px){
+  .topbar .row{
+    flex-wrap:wrap !important;
+    justify-content:flex-start !important;
+  }
+  .topbar .nav{
+    width:100% !important;
+    flex-wrap:wrap !important;
+    white-space:normal !important;
+    gap:10px !important;
+  }
+}
+
+/* Footer social icons */
+.footerSocial{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.footerSocial a{
+  width:34px;height:34px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+.footerSocial a:hover{
+  border-color: rgba(215,181,109,.30);
+  background: rgba(255,255,255,.05);
+}
+.footerSocial svg{
+  width:18px;height:18px;
+  fill:#a7b0c2;
+}
+.footerSocial a:hover svg{ fill:#e9edf7; }
+
