@@ -503,7 +503,7 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
 /* Force the same centered container model as page body */
 .topbar .container{
   width:100% !important;
-  max-width:1120px !important;   /* stable, body-like width */
+  max-width: none !important;   /* stable, body-like width */
   margin-left:auto !important;
   margin-right:auto !important;
   padding-left:24px !important;  /* body-like gutter */
@@ -542,3 +542,18 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
   .topbar .nav{ order:3 !important; width:100% !important; }
 }
 
+
+/* ===== TOPBAR CONTAINER FINAL SYNC ===== */
+/* Let the global .container width define the grid; only enforce centering + safe gutters */
+.topbar{ overflow-x:hidden !important; }
+.topbar .container{
+  margin-left:auto !important;
+  margin-right:auto !important;
+  box-sizing:border-box !important;
+}
+@media (max-width: 720px){
+  .topbar .container{
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+}
