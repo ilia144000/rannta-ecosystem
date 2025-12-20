@@ -403,3 +403,59 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
     white-space:nowrap;
   }
 }
+
+/* ===== Header alignment fix ===== */
+.topbar .row{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start; /* do NOT center anything */
+  gap:16px;
+}
+
+.topbar .brandLink{
+  margin-right:auto; /* hard-anchor brand to the left */
+}
+
+.topbar .nav{
+  margin-left:0;
+}
+
+.topbar .social{
+  margin-left:12px; /* keep icons on the far right */
+}
+
+/* Mobile: brand left, socials right, nav on its own row */
+@media (max-width: 720px){
+  .topbar .row{
+    flex-wrap:wrap;
+    align-items:center;
+  }
+
+  .topbar .brandLink{
+    order:1;
+    margin-right:auto;
+  }
+
+  .topbar .social{
+    order:2;
+    margin-left:auto;
+  }
+
+  .topbar .nav{
+    order:3;
+    width:100%;
+    justify-content:flex-start;
+  }
+}
+
+/* Small phones: allow nav horizontal scroll */
+@media (max-width: 420px){
+  .topbar .nav{
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .topbar .nav::-webkit-scrollbar{display:none;}
+  .topbar .nav a{white-space:nowrap;}
+}
+
