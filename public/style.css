@@ -28,7 +28,15 @@ body{
 a{color:inherit; text-decoration:none}
 a:hover{opacity:.92}
 
-.container{max-width:1160px;margin:0 auto;padding:0 18px}
+.site-container{
+  max-width:1160px;
+  margin:0 auto;
+  padding:0 18px;
+  width:100%;
+  box-sizing:border-box;
+}
+/* Back-compat: keep existing HTML working */
+.container{max-width:1160px;margin:0 auto;padding:0 18px;width:100%;box-sizing:border-box;}
 
 .topbar{
   position:sticky;top:0;z-index:50;
@@ -223,284 +231,56 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
   fill: #e9edf7;
 }
 
-
-
-/* ===== Gold status badge ===== */
-.badge-gold{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:6px 10px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:700;
-  color:#1a1405;
-  background: linear-gradient(135deg, #f5d37a, #c9a24d);
-  box-shadow: 0 0 14px rgba(245,211,122,.22);
-  border: 1px solid rgba(255,215,120,.25);
-}
-
-/* ===== News panel ===== */
-.hubNews{
-  border:1px solid rgba(255,215,120,.15);
-  background: radial-gradient(900px 280px at 25% 0%, rgba(245,211,122,.10), rgba(0,0,0,.18));
-  border-radius:16px;
-  padding:16px;
-}
-.hubNews h3{
-  margin:0 0 10px;
-  font-size:14px;
-  letter-spacing:.2px;
-  color:#f5d37a;
-}
-.newsList{
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:grid;
-  gap:10px;
-}
-.newsItem{
-  display:flex;
-  gap:10px;
-  align-items:flex-start;
-  padding:10px;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,.08);
-  background: rgba(0,0,0,.18);
-}
-.newsDot{
-  width:8px;height:8px;border-radius:50%;
-  margin-top:6px;
-  background:#f5d37a;
-  box-shadow:0 0 10px rgba(245,211,122,.55);
-  flex:0 0 auto;
-}
-.newsItem strong{font-size:13px;color:#e9edf7}
-.newsItem .meta{font-size:12px;color:rgba(255,255,255,.65)}
-.newsItem .meta a{color:#d7b56d;text-decoration:none}
-.newsItem .meta a:hover{text-decoration:underline}
-
-
-
-
-
-
-
-
-/* ===== STANDARD TOPBAR LAYOUT (GRID) ===== */
-/* No guessed widths. Uses the same .container rules as the site. */
+/* ===== STANDARD LAYOUT LOCK (single source of truth) ===== */
+/* Header uses the same container grid as the body. No internal scrollbars. */
 .topbar{
-  width:100%;
-  overflow-x:hidden;
+  position:sticky; top:0; z-index:50;
+  backdrop-filter: blur(14px);
+  background: rgba(7,10,16,.62);
+  border-bottom:1px solid var(--border);
+  overflow:visible; /* never scroll header */
 }
 
 .topbar .row{
-  display:grid;
-  grid-template-columns: auto 1fr auto;  /* brand | nav | socials */
+  height:64px;
+  display:flex;
   align-items:center;
+  justify-content:space-between;
   gap:16px;
-  width:100%;
+  overflow:visible;
 }
 
-/* Brand left */
-.topbar .brandLink{
-  justify-self:start;
-  text-decoration:none;
-  color:inherit;
-}
-
-/* Nav centered */
+.topbar .brandLink{ display:inline-flex; align-items:center; }
 .topbar .nav{
-  justify-self:center;
   display:flex;
   gap:14px;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  overflow:visible;
 }
-
-/* Social right */
-.topbar .social{
-  justify-self:end;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-/* Breadcrumb stays minimal */
-.breadcrumb{
-  margin-top:10px;
+.topbar .nav a{
   font-size:13px;
-  color: rgba(255,255,255,.60);
+  color:var(--muted);
+  padding:8px 10px;
+  border-radius:12px;
 }
-.breadcrumb a{ color: rgba(255,255,255,.72); text-decoration:none; }
-.breadcrumb a:hover{ color:#d7b56d; }
-.breadcrumb .sep{ margin:0 6px; opacity:.4; }
+.topbar .nav a:hover{ color:var(--text); background:rgba(255,255,255,.06); }
 
-/* Mobile: brand + social on first row, nav on second row (scroll if needed) */
-@media (max-width: 720px){
-  .topbar .row{
-    grid-template-columns: 1fr auto; /* brand | social */
-    grid-auto-rows:auto;
-  }
-  .topbar .brandLink{ grid-column:1; grid-row:1; }
-  .topbar .social{ grid-column:2; grid-row:1; }
-
-  .topbar .nav{
-    grid-column:1 / -1;
-    grid-row:2;
-    justify-self:start;
-    width:100%;
-    overflow:auto;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-  }
-  .topbar .nav::-webkit-scrollbar{ display:none; }
-  .topbar .nav a{ white-space:nowrap; }
-}
-
-/* Gold badge used in news/exchange */
-.badge-gold{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:6px 10px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:700;
-  color:#1a1405;
-  background: linear-gradient(135deg, #f5d37a, #c9a24d);
-  box-shadow: 0 0 14px rgba(245,211,122,.22);
-  border: 1px solid rgba(255,215,120,.25);
-}
-
-
-/* ===== TOPBAR NO-INTERNAL-SCROLL FIX ===== */
-/* Never allow internal scrollbars inside the header on desktop */
-.topbar{ overflow: visible !important; }
-.topbar *{ scrollbar-width: auto; } /* neutral */
-.topbar .nav{ overflow: visible !important; }
-.topbar .row{ overflow: visible !important; }
-
-/* If space gets tight (tablet/smaller desktop), switch to 2-row header instead of scrolling */
-@media (max-width: 1100px){
-  .topbar .row{
-    grid-template-columns: 1fr auto !important; /* brand | social */
-    grid-auto-rows: auto !important;
-  }
-  .topbar .brandLink{ grid-column: 1; grid-row: 1; }
-  .topbar .social{ grid-column: 2; grid-row: 1; }
-
-  .topbar .nav{
-    grid-column: 1 / -1 !important;
-    grid-row: 2 !important;
-    justify-self: start !important;
-    width: 100% !important;
-    flex-wrap: wrap !important;       /* wrap, don't scroll */
-    white-space: normal !important;
-  }
-}
-
-/* Mobile: allow nav to wrap; NO scrollbars inside header */
-@media (max-width: 720px){
-  .topbar .nav{
-    overflow: visible !important;
-    flex-wrap: wrap !important;
-  }
-}
-
-
-/* ===== REMOVE SOCIAL ICONS FROM HEADER ===== */
-.topbar .social,
-.topbar .social-icons,
-.topbar .header-social {
-  display: none !important;
-}
-
-/* ===== STANDARD HEADER LAYOUT ===== */
-.topbar {
-  width: 100%;
-}
-
-.topbar .row {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Brand ALWAYS hard-left */
-.topbar .brandLink {
-  margin-right: auto !important;
-}
-
-/* Nav ALWAYS right, no drift */
-.topbar .nav {
-  margin-left: auto !important;
-  display: flex;
-  gap: 18px;
-  white-space: nowrap;
-}
-
-/* NEVER allow header scroll */
-.topbar,
-.topbar * {
-  overflow: visible !important;
-}
-
-/* ===== HEADER STANDARD ALIGNMENT LOCK ===== */
-/* Align topbar to the SAME container width as the body (extracted from CSS) */
-.topbar{
-  width:100% !important;
-  overflow:visible !important;
-}
-
-.topbar .container{
-  width:100% !important;
-  max-width:1160px !important;
-  margin-left:auto !important;
-  margin-right:auto !important;
-  padding-left:16px !important;
-  padding-right:16px !important;
-  box-sizing:border-box !important;
-}
-
-/* Standard header layout: left brand, right nav */
-.topbar .row{
-  width:100% !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:space-between !important;
-  gap:16px !important;
-}
-
-/* Brand hard-left */
-.topbar .brandLink{ margin-right:24px !important; }
-
-/* Nav hard-right, no internal scrolling */
-.topbar .nav{
-  margin-left:auto !important;
-  display:flex !important;
-  gap:18px !important;
-  white-space:nowrap !important;
-  overflow:visible !important;
-}
-
-/* Remove social icons from header (move them to footer) */
+/* Remove socials from header (move to footer only) */
 .topbar .social{ display:none !important; }
 
-/* Mobile: wrap nav to next line instead of creating any header scrollbars */
+/* Mobile: brand first row, nav second row (wrap, not scroll) */
 @media (max-width: 720px){
   .topbar .row{
-    flex-wrap:wrap !important;
-    justify-content:flex-start !important;
+    height:auto;
+    padding:10px 0;
+    flex-wrap:wrap;
+    justify-content:flex-start;
   }
   .topbar .nav{
-    width:100% !important;
-    flex-wrap:wrap !important;
-    white-space:normal !important;
-    gap:10px !important;
+    width:100%;
+    justify-content:flex-start;
+    gap:10px;
   }
 }
 
@@ -525,9 +305,7 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
   border-color: rgba(215,181,109,.30);
   background: rgba(255,255,255,.05);
 }
-.footerSocial svg{
-  width:18px;height:18px;
-  fill:#a7b0c2;
-}
+.footerSocial svg{ width:18px;height:18px; fill:#a7b0c2; }
 .footerSocial a:hover svg{ fill:#e9edf7; }
+
 
