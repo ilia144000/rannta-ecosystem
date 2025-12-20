@@ -222,68 +222,7 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
 .socialLink:hover svg{
   fill: #e9edf7;
 }
-/* ===== Brand link (Home anchor) ===== */
-.brandLink {
-  text-decoration: none;
-  color: inherit;
-  display: inline-flex;
-  align-items: center;
-}
 
-.brandLink:hover {
-  opacity: 0.95;
-}
-
-/* ===== Minimal breadcrumb ===== */
-.breadcrumb {
-  margin-top: 6px;
-  font-size: 13px;
-  color: rgba(255,255,255,0.6);
-}
-
-.breadcrumb a {
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-}
-
-.breadcrumb a:hover {
-  color: #d4af37; /* gold */
-}
-
-.breadcrumb .sep {
-  margin: 0 6px;
-  opacity: 0.4;
-}
-
-
-/* ===== Brand link (Home anchor) ===== */
-.brandLink {
-  text-decoration: none;
-  color: inherit;
-  display: inline-flex;
-  align-items: center;
-}
-.brandLink:hover {
-  opacity: 0.95;
-}
-
-/* ===== Minimal breadcrumb ===== */
-.breadcrumb {
-  margin: 10px 0 0;
-  font-size: 13px;
-  color: rgba(255,255,255,0.60);
-}
-.breadcrumb a {
-  color: rgba(255,255,255,0.72);
-  text-decoration: none;
-}
-.breadcrumb a:hover {
-  color: #d7b56d;
-}
-.breadcrumb .sep {
-  margin: 0 6px;
-  opacity: 0.4;
-}
 
 
 /* ===== Gold status badge ===== */
@@ -343,217 +282,94 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
 .newsItem .meta a:hover{text-decoration:underline}
 
 
-/* ===== Responsive header (mobile) ===== */
-@media (max-width: 720px) {
-  .topbar .row{
-    height:auto;
-    padding:10px 0;
-    gap:10px;
-    flex-wrap:wrap;
-    align-items:flex-start;
-  }
 
-  .brand{
-    min-width:unset;
-  }
 
-  .brandTitle strong{
-    font-size:13px;
-  }
-  .brandTitle span{
-    font-size:11px;
-  }
 
-  .nav{
-    width:100%;
-    justify-content:flex-start;
-    gap:8px;
-  }
-  .nav a{
-    padding:7px 9px;
-    font-size:12px;
-  }
 
-  .social{
-    margin-left:auto;
-    padding-left:0;
-    gap:8px;
-  }
-  .socialLink{
-    width:30px;
-    height:30px;
-    border-radius:11px;
-  }
-  .socialLink svg{
-    width:16px;
-    height:16px;
-  }
+
+
+/* ===== STANDARD TOPBAR LAYOUT (GRID) ===== */
+/* No guessed widths. Uses the same .container rules as the site. */
+.topbar{
+  width:100%;
+  overflow-x:hidden;
 }
 
-/* Even smaller phones */
-@media (max-width: 420px) {
-  .nav{
-    overflow:auto;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-  }
-  .nav::-webkit-scrollbar{ display:none; }
-
-  .nav a{
-    white-space:nowrap;
-  }
-}
-
-/* ===== Header alignment fix ===== */
 .topbar .row{
+  display:grid;
+  grid-template-columns: auto 1fr auto;  /* brand | nav | socials */
+  align-items:center;
+  gap:16px;
+  width:100%;
+}
+
+/* Brand left */
+.topbar .brandLink{
+  justify-self:start;
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Nav centered */
+.topbar .nav{
+  justify-self:center;
+  display:flex;
+  gap:14px;
+  flex-wrap:nowrap;
+}
+
+/* Social right */
+.topbar .social{
+  justify-self:end;
   display:flex;
   align-items:center;
-  justify-content:flex-start; /* do NOT center anything */
-  gap:16px;
+  gap:10px;
 }
 
-.topbar .brandLink{
-  margin-right:auto; /* hard-anchor brand to the left */
+/* Breadcrumb stays minimal */
+.breadcrumb{
+  margin-top:10px;
+  font-size:13px;
+  color: rgba(255,255,255,.60);
 }
+.breadcrumb a{ color: rgba(255,255,255,.72); text-decoration:none; }
+.breadcrumb a:hover{ color:#d7b56d; }
+.breadcrumb .sep{ margin:0 6px; opacity:.4; }
 
-.topbar .nav{
-  margin-left:0;
-}
-
-.topbar .social{
-  margin-left:12px; /* keep icons on the far right */
-}
-
-/* Mobile: brand left, socials right, nav on its own row */
+/* Mobile: brand + social on first row, nav on second row (scroll if needed) */
 @media (max-width: 720px){
   .topbar .row{
-    flex-wrap:wrap;
-    align-items:center;
+    grid-template-columns: 1fr auto; /* brand | social */
+    grid-auto-rows:auto;
   }
-
-  .topbar .brandLink{
-    order:1;
-    margin-right:auto;
-  }
-
-  .topbar .social{
-    order:2;
-    margin-left:auto;
-  }
+  .topbar .brandLink{ grid-column:1; grid-row:1; }
+  .topbar .social{ grid-column:2; grid-row:1; }
 
   .topbar .nav{
-    order:3;
+    grid-column:1 / -1;
+    grid-row:2;
+    justify-self:start;
     width:100%;
-    justify-content:flex-start;
-  }
-}
-
-/* Small phones: allow nav horizontal scroll */
-@media (max-width: 420px){
-  .topbar .nav{
     overflow:auto;
     -webkit-overflow-scrolling:touch;
     scrollbar-width:none;
   }
-  .topbar .nav::-webkit-scrollbar{display:none;}
-  .topbar .nav a{white-space:nowrap;}
+  .topbar .nav::-webkit-scrollbar{ display:none; }
+  .topbar .nav a{ white-space:nowrap; }
 }
 
-
-/* ===== Header alignment hard override ===== */
-.topbar .container { padding-left: 16px !important; padding-right: 16px !important; }
-
-.topbar .row{
-  justify-content:flex-start !important;
+/* Gold badge used in news/exchange */
+.badge-gold{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  color:#1a1405;
+  background: linear-gradient(135deg, #f5d37a, #c9a24d);
+  box-shadow: 0 0 14px rgba(245,211,122,.22);
+  border: 1px solid rgba(255,215,120,.25);
 }
 
-.topbar .brandLink{
-  margin-left:0 !important;
-  margin-right:auto !important;
-}
-
-.topbar .brand{
-  margin-left:0 !important;
-}
-
-.topbar .nav{
-  margin-left:0 !important;
-}
-
-.topbar .social{
-  margin-left:auto !important;
-  margin-right:0 !important;
-}
-
-@media (max-width: 720px){
-  .topbar .row{ flex-wrap:wrap !important; }
-  .topbar .brandLink{ width:auto !important; }
-  .topbar .social{ margin-left:auto !important; }
-  .topbar .nav{ width:100% !important; }
-}
-
-
-/* ===== TOPBAR CONTAINER LOCK (ALIGN WITH BODY) ===== */
-/* Prevent header from drifting or overflowing */
-.topbar{
-  width:100% !important;
-  overflow-x:hidden !important;
-}
-
-/* Force the same centered container model as page body */
-.topbar .container{
-  width:100% !important;
-  max-width: none !important;   /* stable, body-like width */
-  margin-left:auto !important;
-  margin-right:auto !important;
-  padding-left:24px !important;  /* body-like gutter */
-  padding-right:24px !important;
-  box-sizing:border-box !important;
-}
-
-/* Keep row aligned to left inside the container */
-.topbar .row{
-  width:100% !important;
-  margin:0 !important;
-  padding:0 !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:flex-start !important;
-  box-sizing:border-box !important;
-}
-
-/* Brand always left, socials always right */
-.topbar .brandLink{ margin-right:auto !important; }
-.topbar .social{ margin-left:auto !important; }
-
-/* Mobile gutters */
-@media (max-width: 720px){
-  .topbar .container{
-    max-width:100% !important;
-    padding-left:16px !important;
-    padding-right:16px !important;
-  }
-  .topbar .row{
-    flex-wrap:wrap !important;
-    gap:10px !important;
-  }
-  .topbar .brandLink{ order:1 !important; }
-  .topbar .social{ order:2 !important; }
-  .topbar .nav{ order:3 !important; width:100% !important; }
-}
-
-
-/* ===== TOPBAR CONTAINER FINAL SYNC ===== */
-/* Let the global .container width define the grid; only enforce centering + safe gutters */
-.topbar{ overflow-x:hidden !important; }
-.topbar .container{
-  margin-left:auto !important;
-  margin-right:auto !important;
-  box-sizing:border-box !important;
-}
-@media (max-width: 720px){
-  .topbar .container{
-    padding-left:16px !important;
-    padding-right:16px !important;
-  }
-}
