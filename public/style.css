@@ -492,3 +492,53 @@ hr.sep{border:0;border-top:1px solid var(--border);margin:14px 0}
   .topbar .nav{ width:100% !important; }
 }
 
+
+/* ===== TOPBAR CONTAINER LOCK (ALIGN WITH BODY) ===== */
+/* Prevent header from drifting or overflowing */
+.topbar{
+  width:100% !important;
+  overflow-x:hidden !important;
+}
+
+/* Force the same centered container model as page body */
+.topbar .container{
+  width:100% !important;
+  max-width:1120px !important;   /* stable, body-like width */
+  margin-left:auto !important;
+  margin-right:auto !important;
+  padding-left:24px !important;  /* body-like gutter */
+  padding-right:24px !important;
+  box-sizing:border-box !important;
+}
+
+/* Keep row aligned to left inside the container */
+.topbar .row{
+  width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  box-sizing:border-box !important;
+}
+
+/* Brand always left, socials always right */
+.topbar .brandLink{ margin-right:auto !important; }
+.topbar .social{ margin-left:auto !important; }
+
+/* Mobile gutters */
+@media (max-width: 720px){
+  .topbar .container{
+    max-width:100% !important;
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+  .topbar .row{
+    flex-wrap:wrap !important;
+    gap:10px !important;
+  }
+  .topbar .brandLink{ order:1 !important; }
+  .topbar .social{ order:2 !important; }
+  .topbar .nav{ order:3 !important; width:100% !important; }
+}
+
